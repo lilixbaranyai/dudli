@@ -33,7 +33,7 @@ th, td{
 }
 
 button{
-/* van olyan, hogy méret simán magában? */
+    transform: scale(1.2);
 }
 
 input{
