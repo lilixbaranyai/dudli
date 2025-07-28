@@ -1,0 +1,41 @@
+* {
+    font-family: sans-serif;
+    border: black dotted 1px;
+}
+body{
+    background:#bc9632;
+}
+
+h1{
+    text-align: center;
+    color: #00ffff;
+}
+
+h2{
+    text-align: center;
+    color: #00ffff;
+}
+
+table, th, td, tr{
+    border: 1px solid black;
+    background: #ffffff
+}
+
+th, td{
+    padding: 5px;
+    min-width: 50px;
+    text-align: center;
+}
+
+.name, .comment{
+    font-size: 20px;
+    margin: 20px 0;
+}
+
+button{
+/* van olyan, hogy méret simán magában? */
+}
+
+input{
+    margin: 20px 0;
+}
