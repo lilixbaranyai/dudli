@@ -7,129 +7,144 @@
     <link rel="stylesheet" href="main.css">
     <script src="main.js" defer></script>
 </head>
+
 <body>
     <h1>5kor a szökőkútnál</h1>
     <h2>de ha pontosabban szeretnéd megbeszélni...</h2>
-    <h2>Válaszd ki a neked megfelelő időpontot a következő üléshez!</h2> 
+    <h2>Válaszd ki a neked megfelelő időpontot a következő üléshez!</h2>
+
+    <form action="idopontok.html" method="GET">
+    <div class="name">Add meg a neved:
+        <input type="text" id="szoveg" placeholder="Írj be valamit" required>
+        <button>Küldés</button>
+        <input type="checkbox">Banán</input>
+    </div>
+    <div>
+        <label for="gyules">Melyik bizottság?</label>
+        <select name="gyules" id="gyules">
+            <option label="Kommbiz" value="kommbiz"></option>
+            <option label="Közbiz" value="kozbiz"></option>
+            <option label="Kultbiz" value="kultbiz"></option>
+            <option label="Sportbiz" value="sportbiz"></option>
+        </select>
+    </div>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Nap</th>
+                <th>Időpont</th>
+                <th>Jó</th>
+                <th>Rósz</th>
+                <th>Ha muszáj</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td rowspan = 3>Hétfő</td>
+                <td>18:00</td>
+                <td><button id="date">Igen</button></td>
+                <td><button id="date">Nem</button></td>
+                <td><button id="date">Talán</button></td>
+            </tr>
+            <tr>
+                <td>19:00</td>
+                <td><button id="date">Igen</button></td>
+                <td><button id="date">Nem</button></td>
+                <td><button id="date">Talán</button></td>
+            </tr>
+            <tr>
+                <td>20:00</td>
+                <td><button id="date">Igen</button></td>
+                <td><button id="date">Nem</button></td>
+                <td><button id="date">Talán</button></td>
+            </tr>
+            <tr>
+                <td rowspan = 3>Kedd</td>
+                <td>18:00</td>
+                <td><button id="date">Igen</button></td>
+                <td><button id="date">Nem</button></td>
+                <td><button id="date">Talán</button></td>
+            </tr>
+            <tr>
+                <td>19:00</td>
+                <td><button id="date">Igen</button></td>
+                <td><button id="date">Nem</button></td>
+                <td><button id="date">Talán</button></td>
+            </tr>
+            <tr>
+                <td>20:00</td>
+                <td><button id="date">Igen</button></td>
+                <td><button id="date">Nem</button></td>
+                <td><button id="date">Talán</button></td>
+            </tr>
+            <tr>
+                <td rowspan = 3>Szerda</td>
+                <td>18:00</td>
+                <td><button id="date">Igen</button></td>
+                <td><button id="date">Nem</button></td>
+                <td><button id="date">Talán</button></td>
+            </tr>
+            <tr>
+                <td>19:00</td>
+                <td><button id="date">Igen</button></td>
+                <td><button id="date">Nem</button></td>
+                <td><button id="date">Talán</button></td>
+            </tr>
+            <tr>
+                <td>20:00</td>
+                <td><button id="date">Igen</button></td>
+                <td><button id="date">Nem</button></td>
+                <td><button id="date">Talán</button></td>
+            </tr>
+            <tr>
+                <td rowspan = 3>Csütörtök</td>
+                <td>18:00</td>
+                <td><button id="date">Igen</button></td>
+                <td><button id="date">Nem</button></td>
+                <td><button id="date">Talán</button></td>
+            </tr>
+            <tr>
+                <td>19:00</td>
+                <td><button id="date">Igen</button></td>
+                <td><button id="date">Nem</button></td>
+                <td><button id="date">Talán</button></td>
+            </tr>
+            <tr>
+                <td>20:00</td>
+                <td><button id="date">Igen</button></td>
+                <td><button id="date">Nem</button></td>
+                <td><button id="date">Talán</button></td>
+            </tr>
+                    <tr>
+                <td rowspan = 3>Péntek</td>
+                <td>18:00</td>
+                <td><button id="date">Igen</button></td>
+                <td><button id="date">Nem</button></td>
+                <td><button id="date">Talán</button></td>
+            </tr>
+            <tr>
+                <td>19:00</td>
+                <td><button id="date">Igen</button></td>
+                <td><button id="date">Nem</button></td>
+                <td><button id="date">Talán</button></td>
+            </tr>
+            <tr>
+                <td>20:00</td>
+                <td><button id="date">Igen</button></td>
+                <td><button id="date">Nem</button></td>
+                <td><button id="date">Talán</button></td>
+            </tr>
+        </tbody>
+    </table>
+
+    <div class="comment">Megjegyzés:
+        <input type="text" id="szoveg" placeholder="Írj be valamit">
+        <button>Küldés</button>
+    </div>
+
+    <button type="reset">Törlés</button>
+    <button type="submit" id="ending">Beküldés</button>
+    </form>
 </body>
-
-<div class="name">Add meg a neved:
-    <input type="text" id="szoveg" placeholder="Írj be valamit">
-    <button>Küldés</button>
-</div>
-
-<table>
-    <thead>
-        <tr>
-            <th>Nap</th>
-            <th>Időpont</th>
-            <th>Jó</th>
-            <th>Rósz</th>
-            <th>Ha muszáj</th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td rowspan = 3>Hétfő</td>
-            <td>18:00</td>
-            <td><button id="date">Igen</button></td>
-            <td><button id="date">Nem</button></td>
-            <td><button id="date">Talán</button></td>
-        </tr>
-        <tr>
-            <td>19:00</td>
-            <td><button id="date">Igen</button></td>
-            <td><button id="date">Nem</button></td>
-            <td><button id="date">Talán</button></td>
-        </tr>
-        <tr>
-            <td>20:00</td>
-            <td><button id="date">Igen</button></td>
-            <td><button id="date">Nem</button></td>
-            <td><button id="date">Talán</button></td>
-        </tr>
-        <tr>
-            <td rowspan = 3>Kedd</td>
-            <td>18:00</td>
-            <td><button id="date">Igen</button></td>
-            <td><button id="date">Nem</button></td>
-            <td><button id="date">Talán</button></td>
-        </tr>
-        <tr>
-            <td>19:00</td>
-            <td><button id="date">Igen</button></td>
-            <td><button id="date">Nem</button></td>
-            <td><button id="date">Talán</button></td>
-        </tr>
-        <tr>
-            <td>20:00</td>
-            <td><button id="date">Igen</button></td>
-            <td><button id="date">Nem</button></td>
-            <td><button id="date">Talán</button></td>
-        </tr>
-        <tr>
-            <td rowspan = 3>Szerda</td>
-            <td>18:00</td>
-            <td><button id="date">Igen</button></td>
-            <td><button id="date">Nem</button></td>
-            <td><button id="date">Talán</button></td>
-        </tr>
-        <tr>
-            <td>19:00</td>
-            <td><button id="date">Igen</button></td>
-            <td><button id="date">Nem</button></td>
-            <td><button id="date">Talán</button></td>
-        </tr>
-        <tr>
-            <td>20:00</td>
-            <td><button id="date">Igen</button></td>
-            <td><button id="date">Nem</button></td>
-            <td><button id="date">Talán</button></td>
-        </tr>
-        <tr>
-            <td rowspan = 3>Csütörtök</td>
-            <td>18:00</td>
-            <td><button id="date">Igen</button></td>
-            <td><button id="date">Nem</button></td>
-            <td><button id="date">Talán</button></td>
-        </tr>
-        <tr>
-            <td>19:00</td>
-            <td><button id="date">Igen</button></td>
-            <td><button id="date">Nem</button></td>
-            <td><button id="date">Talán</button></td>
-        </tr>
-        <tr>
-            <td>20:00</td>
-            <td><button id="date">Igen</button></td>
-            <td><button id="date">Nem</button></td>
-            <td><button id="date">Talán</button></td>
-        </tr>
-                <tr>
-            <td rowspan = 3>Péntek</td>
-            <td>18:00</td>
-            <td><button id="date">Igen</button></td>
-            <td><button id="date">Nem</button></td>
-            <td><button id="date">Talán</button></td>
-        </tr>
-        <tr>
-            <td>19:00</td>
-            <td><button id="date">Igen</button></td>
-            <td><button id="date">Nem</button></td>
-            <td><button id="date">Talán</button></td>
-        </tr>
-        <tr>
-            <td>20:00</td>
-            <td><button id="date">Igen</button></td>
-            <td><button id="date">Nem</button></td>
-            <td><button id="date">Talán</button></td>
-        </tr>
-    </tbody>
-</table>
-
-<div class="comment">Megjegyzés:
-    <input type="text" id="szoveg" placeholder="Írj be valamit">
-    <button>Küldés</button>
-</div>
-
 </html>

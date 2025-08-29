@@ -1,29 +1,32 @@
 * {
     font-family: sans-serif;
     border: black dotted 1px;
+    text-align: center;
+    color: #182134;
 }
 body{
-    background:#F2E2DF;
+    background: #C2AF97;
 }
 
 h1{
     text-align: center;
-    color: #000000;
+    color: #182134;
 }
 
 h2{
     text-align: center;
-    color: #000000;
+    color: #182134;
 }
 
 table{
     border-collapse: collapse;
+    margin: 0px auto;
     /* ezzel sleekebb lesz a táblázat vagy mi próbáld ki xd */
 }
 
 table, th, td, tr{
     border: 1px solid black;
-    background: #f3e2df
+    background: #f3e2df;
 }
 
 th, td{
@@ -45,9 +48,19 @@ th, td{
     background-color: #EBAB9D;
 }
 
+#date:hover{
+    background-color: #ffffff;
+    transform: scale(1.05);
+}
+
 button{
     transform: scale(1.2);
     background: #ffffff;
+}
+
+button:hover {
+    background-color: #45a049;
+    transform: scale(1.05);
 }
 
 input{
